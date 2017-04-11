@@ -1,0 +1,58 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BookReader.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Catalog" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\BD</Value>
+    </Setting>
+    <Setting Name="ImageCacheCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="ImageCacheDuration" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="UseDebug" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ImageFilter" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.PNG&lt;/string&gt;
+  &lt;string&gt;.BMP&lt;/string&gt;
+  &lt;string&gt;.JPG&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="BookFilter" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.CBR&lt;/string&gt;
+  &lt;string&gt;.CBZ&lt;/string&gt;
+  &lt;string&gt;.ZIP&lt;/string&gt;
+  &lt;string&gt;.ARJ&lt;/string&gt;
+  &lt;string&gt;.CAB&lt;/string&gt;
+  &lt;string&gt;.CHM&lt;/string&gt;
+  &lt;string&gt;.CPIO&lt;/string&gt;
+  &lt;string&gt;.DEB&lt;/string&gt;
+  &lt;string&gt;.DMG&lt;/string&gt;
+  &lt;string&gt;.HFS&lt;/string&gt;
+  &lt;string&gt;.ISO&lt;/string&gt;
+  &lt;string&gt;.LZH&lt;/string&gt;
+  &lt;string&gt;.LZMA&lt;/string&gt;
+  &lt;string&gt;.MSI&lt;/string&gt;
+  &lt;string&gt;.NSIS&lt;/string&gt;
+  &lt;string&gt;.RAR&lt;/string&gt;
+  &lt;string&gt;.RPM&lt;/string&gt;
+  &lt;string&gt;.UDF&lt;/string&gt;
+  &lt;string&gt;.WIM&lt;/string&gt;
+  &lt;string&gt;.XAR&lt;/string&gt;
+  &lt;string&gt;.Z&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="UseAutoFit" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ExplorerSize" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">190</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

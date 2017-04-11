@@ -1,0 +1,14 @@
+﻿<ucd:HeaderedDialogWindow x:Class="BookReader.DebugWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ucd="clr-namespace:BookReader.Dialogs"
+    Title="Errors" Height="300" Width="609"
+    DialogDescription="Configure book reader options"
+    DialogImage="/BookReader;component/Resources/Images/tools.png"
+    Style="{DynamicResource HeaderedDialogWindow}"
+    CloseAble="False"
+    >
+    <Grid Margin="10">
+        <TextBlock Name="tbContent" TextWrapping="WrapWithOverflow" />
+    </Grid>
+</ucd:HeaderedDialogWindow>

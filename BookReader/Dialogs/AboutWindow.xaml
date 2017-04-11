@@ -1,0 +1,26 @@
+﻿<ucd:HeaderedDialogWindow x:Class="BookReader.AboutWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ucd="clr-namespace:BookReader.Dialogs"
+    Title="BookReader" Height="267" Width="458"
+    DialogDescription="...software and the author"
+    DialogImage="/BookReader;component/Resources/book.ico"
+    Style="{DynamicResource HeaderedDialogWindow}">
+    <Grid Margin="3">
+                <TextBlock TextWrapping="WrapWithOverflow" Margin="10">
+                    A WPF Book Reader for RAR/CBR and ZIP/CBZ files.
+                    <LineBreak/>
+                    Version 3.1
+                    <LineBreak/>
+                    <LineBreak/>
+                    Author : Guillaume WASER
+                    <LineBreak/>
+                    <Hyperlink>http://wpfbookreader.codeplex.com/</Hyperlink>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    Thanks to SevenZipSharp which allow me to read zip/rar files through 7z<LineBreak/>
+                    <Hyperlink>http://sevenzipsharp.codeplex.com/</Hyperlink>
+                </TextBlock>                
+    </Grid>
+</ucd:HeaderedDialogWindow>

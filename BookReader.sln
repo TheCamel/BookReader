@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookReader", "BookReader\BookReader.csproj", "{930FD52C-36C3-4059-B1A8-EF319E07663D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs05.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BookReader\\BookReader.csproj
+		SccProjectName1 = BookReader
+		SccLocalPath1 = BookReader
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Deploy|Any CPU = Deploy|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{930FD52C-36C3-4059-B1A8-EF319E07663D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{930FD52C-36C3-4059-B1A8-EF319E07663D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{930FD52C-36C3-4059-B1A8-EF319E07663D}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
+		{930FD52C-36C3-4059-B1A8-EF319E07663D}.Deploy|Any CPU.Build.0 = Debug|Any CPU
+		{930FD52C-36C3-4059-B1A8-EF319E07663D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{930FD52C-36C3-4059-B1A8-EF319E07663D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

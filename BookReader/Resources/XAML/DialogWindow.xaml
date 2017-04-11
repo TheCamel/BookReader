@@ -1,0 +1,80 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ucd="clr-namespace:BookReader.Dialogs"
+    xmlns:ucc="clr-namespace:BookReader.Controls"
+    >
+
+    <!-- DialogWindow Style -->
+    <Style x:Key="DialogWindow"  TargetType="{x:Type ucd:DialogWindow}">
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="AllowsTransparency" Value="True"/>
+        <Setter Property="WindowStyle" Value="None"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="ShowInTaskbar" Value="False"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ucd:DialogWindow}">
+
+                    <Grid Margin="10">
+                        <!--Windows Frame rectangle-->
+                        <Rectangle Style="{DynamicResource RectangleFrame}"/>
+
+                        <!--PART_Close is the dialog close button-->
+                        <Button Style="{DynamicResource closeButton}" x:Name="PART_Close" Height="11" 
+                                HorizontalAlignment="Right" Margin="0,9,11,0" VerticalAlignment="Top" Width="11" 
+                                ToolTip="Close" IsCancel="True"/>
+
+                        <!-- PART_ContentPresenter -->
+                        <ContentPresenter x:Name="PART_ContentPresenter"
+                                          HorizontalAlignment="Stretch"
+                                          VerticalAlignment="Stretch"
+                                          
+                                          />
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- HeaderedDialogWindow Style -->
+    <Style x:Key="HeaderedDialogWindow" BasedOn="{StaticResource DialogWindow}" TargetType="{x:Type ucd:HeaderedDialogWindow}">
+        
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ucd:HeaderedDialogWindow}">
+
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="80" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <!--Windows Frame rectangle-->
+                        <Rectangle Grid.RowSpan="2" Style="{DynamicResource RectangleFrame}"/>
+
+                        <!--Header-->
+                        <ucc:Header Style="{DynamicResource Header}" Grid.Row="0" x:Name="PART_Header"
+                                VerticalAlignment="Top" Height="70"
+                                Title="{TemplateBinding Property=Title}"
+                                Image="{TemplateBinding Property=DialogImage}"
+                                Description="{TemplateBinding Property=DialogDescription}" />
+                        
+                        <!--PART_Close is the dialog close button-->
+                        <Button Grid.Row="0" Style="{DynamicResource closeButton}" x:Name="PART_Close" Height="11" 
+                                HorizontalAlignment="Right" Margin="0,9,11,0" VerticalAlignment="Top" Width="11" 
+                                ToolTip="Close" IsCancel="True"/>
+
+                        <!-- PART_ContentPresenter -->
+                        <ContentPresenter Grid.Row="1" x:Name="PART_ContentPresenter"
+                                          HorizontalAlignment="Stretch"
+                                          VerticalAlignment="Stretch"
+                                          />
+                    </Grid>
+                    
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+</ResourceDictionary>
